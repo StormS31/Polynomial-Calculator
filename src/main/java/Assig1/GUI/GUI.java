@@ -1,10 +1,8 @@
-package Assig1;
-
-import java.awt.EventQueue;
+package Assig1.GUI;
+import Assig1.Model.Model;
 
 import javax.swing.JFrame;
 import javax.swing.JPanel;
-import java.awt.EventQueue;
 import java.awt.BorderLayout;
 import javax.swing.JTextField;
 import javax.swing.JTextArea;
@@ -13,8 +11,6 @@ import java.awt.Font;
 import java.awt.event.*;
 import java.awt.Color;
 import javax.swing.JButton;
-import javax.swing.JComboBox;
-import javax.swing.DefaultComboBoxModel;
 
 public class GUI {
 
@@ -454,11 +450,11 @@ public class GUI {
         panel.add(btnNice);
     }
 
-    boolean getFocusA() {
+    public boolean getFocusA() {
         return txtPolA.hasFocus();
     }
 
-    boolean getFocusB() {
+    public boolean getFocusB() {
         return txtPolB.hasFocus();
     }
 
@@ -480,11 +476,11 @@ public class GUI {
         this.txtPolA.setText(s);
     }
 
-    String getPolA() {
+    public String getPolA() {
         return txtPolA.getText();
     }
 
-    String getPolB() {
+    public String getPolB() {
         return txtPolB.getText();
     }
 
@@ -492,55 +488,55 @@ public class GUI {
         txtRezultat.setText(res);
     }
 
-    void addZeroListener(ActionListener e) {
+    public void addZeroListener(ActionListener e) {
         btn0.addActionListener(e);
     }
 
-    void addOneListener(ActionListener e) {
+    public void addOneListener(ActionListener e) {
         btn1.addActionListener(e);
     }
 
-    void addTwoListener(ActionListener e) {
+    public void addTwoListener(ActionListener e) {
         btn2.addActionListener(e);
     }
 
-    void addThreeListener(ActionListener e) {
+    public void addThreeListener(ActionListener e) {
         btn3.addActionListener(e);
     }
 
-    void addFourListener(ActionListener e) {
+    public void addFourListener(ActionListener e) {
         btn4.addActionListener(e);
     }
 
-    void addFiveListener(ActionListener e) {
+    public void addFiveListener(ActionListener e) {
         btn5.addActionListener(e);
     }
 
-    void addSixListener(ActionListener e) {
+    public void addSixListener(ActionListener e) {
         btn6.addActionListener(e);
     }
 
-    void addSevenListener(ActionListener e) {
+    public void addSevenListener(ActionListener e) {
         btn7.addActionListener(e);
     }
 
-    void addEigthListener(ActionListener e) {
+    public void addEigthListener(ActionListener e) {
         btn8.addActionListener(e);
     }
 
-    void addNineListener(ActionListener e) {
+    public void addNineListener(ActionListener e) {
         btn9.addActionListener(e);
     }
 
-    void addPlusListener(ActionListener e) {
+    public void addPlusListener(ActionListener e) {
         btnPlus.addActionListener(e);
     }
 
-    void addMinusListener(ActionListener e) {
+    public void addMinusListener(ActionListener e) {
         btnMinus.addActionListener(e);
     }
 
-    void addPointListener(ActionListener e) {
+    public void addPointListener(ActionListener e) {
         btnPoint.addActionListener(e);
     }
 
@@ -548,31 +544,31 @@ public class GUI {
         btnDiv.addActionListener(e);
     }
 
-    void addMulListener(ActionListener e) {
+    public void addMulListener(ActionListener e) {
         btnMul.addActionListener(e);
     }
 
-    void addCListener(ActionListener e) {
+    public void addCListener(ActionListener e) {
         btnC.addActionListener(e);
     }
 
-    void addACListener(ActionListener e) {
+    public void addACListener(ActionListener e) {
         btnAC.addActionListener(e);
     }
 
-    void addDerivareListener(ActionListener e) {
+    public void addDerivareListener(ActionListener e) {
         btnDerivare.addActionListener(e);
     }
 
-    void addIntegrareListener(ActionListener e) {
+    public void addIntegrareListener(ActionListener e) {
         btnIntegrare.addActionListener(e);
     }
 
-    void addPowListener(ActionListener e) {
+    public void addPowListener(ActionListener e) {
         btnPow.addActionListener(e);
     }
 
-    void addXListener(ActionListener e) {
+    public void addXListener(ActionListener e) {
         btnX.addActionListener(e);
     }
 
@@ -580,13 +576,13 @@ public class GUI {
         btnNice.addActionListener(e);
     }
 
-    void addFocusareListener(FocusListener e) {
+    public void addFocusareListener(FocusListener e) {
         txtPolA.addFocusListener(e);
     }
-    void addFocusareTxt2Listener(FocusListener e) {
+    public void addFocusareTxt2Listener(FocusListener e) {
         txtPolB.addFocusListener(e);
     }
-    void addResultListener(FocusListener e)
+    public void addResultListener(FocusListener e)
     {
         txtRezultat.addFocusListener(e);
     }

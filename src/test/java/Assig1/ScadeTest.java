@@ -1,5 +1,6 @@
 package Assig1;
 
+import Assig1.Model.Model;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
@@ -12,6 +13,6 @@ class ScadeTest {
         String a = "3X+1";
         String b = "2X+1";
         String c = model.subPolinoame(a, b);
-        assertTrue(c.equals("1.0x^1.0 "));
+        assertTrue(c.equals("1.0x"));
     }
 }

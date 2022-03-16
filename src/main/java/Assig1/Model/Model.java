@@ -1,5 +1,4 @@
-package Assig1;
-
+package Assig1.Model;
 import java.util.Collections;
 import java.util.List;
 import java.util.regex.Matcher;
@@ -8,7 +7,7 @@ import java.util.regex.Pattern;
 public class Model {
     private Polinom polA;
     private Polinom polB;
-    Model(){
+    public Model(){
         polA = new Polinom();
         polB = new Polinom();
     }
@@ -147,7 +146,7 @@ public class Model {
         ma=polB.getMon();
         for(int i=0; i<ma.size(); i++)
         {
-            double sumCoef = ma.get(i).getCoef(), exp = ma.get(i).getPow();
+            double sumCoef = -ma.get(i).getCoef(), exp = ma.get(i).getPow();
             for(int k = i+1; k<ma.size(); k++)
             {
                 if(ma.get(k).getPow() == exp)
@@ -262,6 +261,10 @@ public class Model {
         //polC.toString_2Out();
         //System.out.println("2");
         result = polC.toString_2();
+        if(result.equals(""))
+        {
+            result = "0";
+        }
         //System.out.println(result);
         return result;
     }

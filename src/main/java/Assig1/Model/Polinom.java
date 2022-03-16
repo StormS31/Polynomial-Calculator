@@ -1,5 +1,4 @@
-package Assig1;
-
+package Assig1.Model;
 import java.util.ArrayList;
 import java.util.List;
 

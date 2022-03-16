@@ -1,4 +1,7 @@
-package Assig1;
+package Assig1.Controller;
+
+import Assig1.GUI.GUI;
+import Assig1.Model.Model;
 
 import javax.swing.*;
 import javax.swing.text.BadLocationException;
@@ -10,7 +13,7 @@ public class Controller {
     private GUI gui;
     private JTextField txt;
 
-    Controller(Model model, GUI gui) {
+    public Controller(Model model, GUI gui) {
         this.model = model;
         this.gui = gui;
 
